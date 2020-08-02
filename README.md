@@ -6,3 +6,10 @@ Taking the universal module definition build of React and ReactDOM, we consume i
 
 React elements could not be added directly into the DOM, as they are not DOM elements.
 This is where ReactDOM comes, and adds the react elements into the DOM.
+
+```html
+<script type="text/babel">
+</script>
+```
+
+This lets the babel CDN to recognize the code inside the script tag and convert it to JS understandable to browser.

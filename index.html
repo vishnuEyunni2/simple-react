@@ -12,11 +12,11 @@
 </body>
 <script src="https://unpkg.com/react@16.13.1/umd/react.development.js" ></script>
 <script src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.development.js"></script>
-<script>
+<script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+<script type="text/babel">
   const rootEl = document.getElementById("root");
-  const span = React.createElement('span', {}, 'SPAN!');
-  const element = React.createElement('h1', { id: 'header', children: ['Hey there', span] });
-  console.log(element);
+  // const element = React.createElement('h1', { id: 'header'}, 'Hey there');
+  const element = <h1 id="header">Hey there</h1>
   ReactDOM.render(element,rootEl);
 </script>
 </html>
