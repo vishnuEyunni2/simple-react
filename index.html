@@ -10,26 +10,13 @@
 <body>
   <div id="root"></div>
 </body>
+<script src="https://unpkg.com/react@16.13.1/umd/react.development.js" ></script>
+<script src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.development.js"></script>
 <script>
-  const rootEle = document.getElementById("root")
-  function createElement(type, props, ...children) {
-    const element = document.createElement(type);
-    Object.entries(props).forEach(([key, value]) => {
-      element.setAttribute(key, value)
-    });
-    (props.children || children).forEach(child => {
-      if (typeof child === 'string') {
-        element.appendChild(document.createTextNode(child))
-      } else {
-        element.appendChild(child)
-      }
-    })
-    return element;
-  }
-
-  const span = createElement('span', {}, 'SPAN!')
-  const element = createElement('h1', { id: 'header', children: ['Hey there', span] })
-  rootEle.appendChild(element)
+  const rootEl = document.getElementById("root");
+  const span = React.createElement('span', {}, 'SPAN!');
+  const element = React.createElement('h1', { id: 'header', children: ['Hey there', span] });
+  console.log(element);
+  ReactDOM.render(element,rootEl);
 </script>
-
 </html>
