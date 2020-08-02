@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+<script>
+  const rootEle = document.getElementById("root");
+  function createElement(type, props, ...children) {
+    const element = document.createElement(type);
+    Object.entries(props).forEach(([key, value]) => {
+      element.setAttribute(key, value);
+    })
+    children.forEach(child => {
+      if (typeof child === 'string') {
+        element.appendChild(document.createTextNode(child))
+      } else {
+        element.appendChild(child)
+      }
+    })
+    return element;
+  }
+
+  const span = createElement('span', {}, 'SPAN!')
+  const element = createElement('h1', { id: 'header' }, 'Hey there', span)
+  rootEle.appendChild(element);
+</script>
+
+</html>
