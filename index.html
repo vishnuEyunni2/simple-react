@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="origin-trial"
+      content="AuOjV0of+6WGMts9baTbz0rgqQpZQuSw+ithdn1joz+uD79nXLraeQ7Hjd9c4oaGk+kH77O8uSn3/TcY8t7UCgUAAACHeyJvcmlnaW4iOiJodHRwczovL3JlYWN0LWRlbW8tYS5oZXJva3VhcHAuY29tOjQ0MyIsImZlYXR1cmUiOiJSVENFeHRlbmREZWFkbGluZUZvclBsYW5CUmVtb3ZhbCIsImV4cGlyeSI6MTY1MzQzNjc5OSwiaXNTdWJkb21haW4iOnRydWV9"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://unpkg.com/react@17.0.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+    <!-- <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script> -->
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-
-<body>
-  <div id="root"></div>
-</body>
-<script src="https://unpkg.com/react@16.13.1/umd/react.development.js" ></script>
-<script src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.development.js"></script>
-<script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
-<script type="text/babel">
-  const rootEl = document.getElementById("root");
-  // const element = React.createElement('h1', { id: 'header'}, 'Hey there');
-  const element = <h1 id="header">Hey there</h1>
-  ReactDOM.render(element,rootEl);
-</script>
+  <body>
+    <div id="dateJs"></div>
+    <div id="dateReact"></div>
+    <!-- <div id="root"></div> -->
+  </body>
+  <!-- <script type="text/babel">
+    const rootEl = document.getElementById("root");
+    // const element = React.createElement('h1', { id: 'header'}, 'Hey there');
+    const element = <h1 id="header">Hey there</h1>;
+    ReactDOM.render(element, rootEl);
+  </script> -->
+  <script src="script.js"></script>
 </html>
